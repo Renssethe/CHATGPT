@@ -7,6 +7,27 @@
     <title>CHAT GPT</title>
 </head>
 <body>
-    Chat GPT
+    <img src="media/cat.png" id="audio" onclick="play()">
+
+    <script>
+        function play() {
+          let urls = ['media/1.mp3','media/2.mp3',]
+          const url = urls[Math.floor(Math.random() * urls.length)];
+          new Audio(url).play();
+        }
+    </script>
+
+    <style>
+        img {
+            max-width: 100%;
+            width: 540px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            padding: 25px;
+        }
+    </style>
 </body>
 </html>
